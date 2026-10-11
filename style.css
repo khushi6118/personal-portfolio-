@@ -1869,8 +1869,8 @@ body[data-theme="light"] .moon-icon {
    -------------------------------------------------------------------------- */
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 5.8rem; /* Sits above the floating Botpress AI chatbot launcher button */
+  right: 1.8rem;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -1882,7 +1882,7 @@ body[data-theme="light"] .moon-icon {
   font-size: 1.1rem;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-  z-index: 999;
+  z-index: 998; /* Ensures Botpress modal overlay appears smoothly on top */
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
@@ -2071,6 +2071,13 @@ body[data-theme="light"] .moon-icon {
 
   .social-button-row {
     grid-template-columns: 1fr;
+  }
+
+  .back-to-top {
+    bottom: 5.4rem;
+    right: 1.2rem;
+    width: 42px;
+    height: 42px;
   }
 }
 

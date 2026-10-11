@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Khushi Jain - First-year B.Tech CSE (AI & ML) student at JECRC University. Passionate about AI, ML, robotics, and smart automation.">
+  <meta name="keywords" content="Khushi Jain, Portfolio, B.Tech CSE, AI & ML, JECRC University, Smart House, Smart Dustbin, Python, C, SQL">
+  <meta name="author" content="Khushi Jain">
+  
+  <title>Khushi Jain | B.Tech CSE (AI & ML) Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- Background Decorative Glowing Orbs -->
+  <div class="glow-bg glow-1" aria-hidden="true"></div>
+  <div class="glow-bg glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Khushi Jain Portfolio Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Khushi</span><span class="logo-accent">.dev</span><span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Get In Touch CTA -->
+        <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>First-Year B.Tech CSE (AI &amp; ML) Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Khushi Jain</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am an </span>
+            <span class="typing-text" id="typewriter"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate first-year Computer Science student specializing in Artificial Intelligence &amp; Machine Learning at 
+            <strong>JECRC University</strong>. Enthusiastic about smart automation, programming in C &amp; Python, database management, and developing tech solutions that make an impact.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+            <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">Connect with me:</span>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/khushi-jain-6131423a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" class="social-link github" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:khushijn06118@gmail.com" class="social-link email" aria-label="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+917737084879" class="social-link phone" aria-label="Call Phone">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">profile.py</span>
+              <span class="code-lang">Python 3.x</span>
+            </div>
+            <pre class="code-content"><code><span class="code-keyword">class</span> <span class="code-class">StudentProfile</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Khushi Jain"</span>
+        <span class="code-param">self</span>.college = <span class="code-string">"JECRC University"</span>
+        <span class="code-param">self</span>.degree = <span class="code-string">"B.Tech CSE (AI &amp; ML)"</span>
+        <span class="code-param">self</span>.year = <span class="code-string">"First Year"</span>
+        <span class="code-param">self</span>.languages = [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"SQL"</span>]
+        <span class="code-param">self</span>.interests = [
+            <span class="code-string">"Artificial Intelligence"</span>,
+            <span class="code-string">"Machine Learning"</span>,
+            <span class="code-string">"Smart Robotics"</span>
+        ]
+        <span class="code-param">self</span>.motto = <span class="code-string">"Learn. Build. Innovate."</span>
+
+<span class="code-comment"># Creating profile instance</span>
+khushi = <span class="code-class">StudentProfile</span>()
+print(f<span class="code-string">"Status: Ready to build and collaborate!"</span>)</code></pre>
+            <div class="card-glow-edge"></div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top">
+            <i class="fa-solid fa-microchip icon-accent"></i>
+            <div>
+              <span class="badge-title">AI &amp; ML Focus</span>
+              <span class="badge-subtitle">Specialization</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <i class="fa-solid fa-trophy icon-gold"></i>
+            <div>
+              <span class="badge-title">Best Project</span>
+              <span class="badge-subtitle">Robotics Lab Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll down to About section">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card intro-card">
+            <div class="card-icon-header">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I am <strong>Khushi Jain</strong>, an enthusiastic first-year undergraduate pursuing my Bachelor of Technology in 
+              <strong>Computer Science and Engineering with specialization in Artificial Intelligence &amp; Machine Learning</strong> at <strong>JECRC University</strong>.
+            </p>
+            <p>
+              My journey in technology is driven by curiosity about how intelligent algorithms and hardware can interact to automate and improve human lives. From foundational programming in <strong>C</strong> and data queries in <strong>SQL</strong> to building functional prototypes in <strong>Python</strong>, I love turning concepts into tangible applications.
+            </p>
+            <p>
+              Beyond technical skills, I place high value on <strong>effective communication</strong> and teamwork, enabling me to clearly present ideas, collaborate with peers, and tackle complex problems constructively.
+            </p>
+          </div>
+
+          <div class="about-card details-card">
+            <h3>Quick Overview</h3>
+            <ul class="details-list">
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-signature"></i> Full Name:</span>
+                <span class="detail-value">Khushi Jain</span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-building-columns"></i> University:</span>
+                <span class="detail-value">JECRC University, Jaipur</span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="detail-value">B.Tech CSE (AI &amp; ML)</span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-calendar-day"></i> Academic Year:</span>
+                <span class="detail-value">First Year</span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="detail-value">
+                  <a href="mailto:khushijn06118@gmail.com">khushijn06118@gmail.com</a>
+                </span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-phone"></i> Contact:</span>
+                <span class="detail-value">
+                  <a href="tel:+917737084879">+91 7737084879</a>
+                </span>
+              </li>
+              <li class="details-item">
+                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="detail-value">Rajasthan, India</span>
+              </li>
+            </ul>
+
+            <div class="about-action">
+              <a href="#contact" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-comments"></i> Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlights Row -->
+        <div class="highlights-row">
+          <div class="highlight-box">
+            <div class="highlight-number">1st</div>
+            <div class="highlight-text">Year B.Tech CSE (AI &amp; ML)</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-number">2+</div>
+            <div class="highlight-text">Smart Hardware/Python Projects</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-number">1st</div>
+            <div class="highlight-text">Best Project Award in Robotics Lab</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-number">100%</div>
+            <div class="highlight-text">Dedication to Continuous Learning</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-card">
+            <div class="timeline-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="badge-tag">Current Program</span>
+                  <h3 class="degree-title">Bachelor of Technology (B.Tech)</h3>
+                  <h4 class="branch-title">Computer Science &amp; Engineering (Specialization: AI &amp; ML)</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-year"><i class="fa-regular fa-calendar"></i> First Year (2024 - Present)</span>
+                  <span class="timeline-institute"><i class="fa-solid fa-location-dot"></i> JECRC University, Jaipur</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                Currently engaged in core engineering coursework with a specialized focus on Artificial Intelligence and Machine Learning. Building foundational competence in programming logic, mathematics, relational databases, and smart computing systems.
+              </p>
+
+              <div class="coursework-container">
+                <h5 class="coursework-title">Key Academic Focus Areas:</h5>
+                <div class="tag-list">
+                  <span class="tag">Problem Solving &amp; C Programming</span>
+                  <span class="tag">Python for Automation</span>
+                  <span class="tag">Database Management with SQL</span>
+                  <span class="tag">Discrete Mathematics &amp; Logic</span>
+                  <span class="tag">Robotics &amp; Applied Lab Practical</span>
+                  <span class="tag">Professional Communication Skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I Bring To The Table</span>
+          <h2 class="section-title">Technical &amp; Soft <span class="gradient-text">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3>Programming Languages</h3>
+                <p>Core coding fundamentals and scripting</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-c icon-c"></i> C Language
+                  </span>
+                  <span class="skill-level">Core Foundation</span>
+                </div>
+                <p class="skill-desc">Structured programming, logic formulation, syntax understanding, loops, and memory concepts.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-python icon-python"></i> Python
+                  </span>
+                  <span class="skill-level">Applied Scripting</span>
+                </div>
+                <p class="skill-desc">Applied in smart automation projects (Smart Dustbin, Smart House), scripting, and algorithm basics.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & AI Concepts Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-db">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h3>Data &amp; Specialization</h3>
+                <p>Managing data and intelligent systems</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-table icon-sql"></i> SQL (Structured Query Language)
+                  </span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <p class="skill-desc">Relational database design, crafting queries, data filtering, joins, aggregation, and table manipulation.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-brain icon-ai"></i> AI &amp; ML Fundamentals
+                  </span>
+                  <span class="skill-level">Academic Specialization</span>
+                </div>
+                <p class="skill-desc">Learning machine intelligence paradigms, algorithmic thinking, and modern AI development frameworks.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional & Soft Skills Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-soft">
+                <i class="fa-solid fa-people-arrows"></i>
+              </div>
+              <div>
+                <h3>Interpersonal &amp; Practical</h3>
+                <p>Effective collaboration and prototyping</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-comments icon-comm"></i> Communication Skills
+                  </span>
+                  <span class="skill-level">Strong</span>
+                </div>
+                <p class="skill-desc">Clear verbal and written articulation, presentation ability, team reporting, and active listening.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-robot icon-robotics"></i> Smart Hardware / Robotics
+                  </span>
+                  <span class="skill-level">Hands-on Lab Experience</span>
+                </div>
+                <p class="skill-desc">Practical prototyping with sensors, motors, and controllers recognized with the Robotics Lab Award.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Badges Pills -->
+        <div class="all-skills-pills">
+          <span class="pill"><i class="fa-solid fa-check"></i> C Programming</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Python</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> SQL</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Communication Skills</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Robotics Lab Prototyping</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Smart Automation</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Analytical Problem Solving</span>
+          <span class="pill"><i class="fa-solid fa-check"></i> Team Collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Real-World Implementation</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart House -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box house-gradient">
+                <i class="fa-solid fa-house-signal"></i>
+              </div>
+              <div class="project-badges">
+                <span class="badge-tag">Automation</span>
+                <span class="badge-tag">IoT Concept</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart House System</h3>
+              <p class="project-desc">
+                An intelligent home automation project designed to control and streamline domestic utilities. Engineered to enhance living convenience, minimize electrical energy wastage, and automate routine residential tasks through logical control integration.
+              </p>
+
+              <div class="project-features">
+                <h4>Key Highlights:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check-circle"></i> Automated appliance control based on conditional logic.</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Integrated energy-saving automation triggers for domestic devices.</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Conceptualized and prototyped as a foundational smart living model.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Automation Logic</span>
+                <span class="tech-pill">Sensors / Hardware</span>
+                <span class="tech-pill">IoT Architecture</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> View GitHub
+              </a>
+              <button type="button" class="btn btn-ghost btn-sm details-trigger" data-project="smart-house">
+                <i class="fa-solid fa-circle-info"></i> Project Details
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Smart Dustbin using Python -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box dustbin-gradient">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+              <div class="project-badges">
+                <span class="badge-tag">Python</span>
+                <span class="badge-tag">Robotics &amp; Sensors</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart Dustbin using Python</h3>
+              <p class="project-desc">
+                An automated contactless waste disposal system built using Python programming and sensor-driven logic. The bin automatically detects approaching users, lifts the lid hands-free, and closes safely to promote hygiene and modern sanitation.
+              </p>
+
+              <div class="project-features">
+                <h4>Key Highlights:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check-circle"></i> Hands-free lid actuation driven by ultrasonic proximity detection.</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Scripted using Python logic to coordinate sensor triggers and servo movements.</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Hygienic solution tailored for smart public spaces, schools, and homes.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Ultrasonic Sensor</span>
+                <span class="tech-pill">Servo Actuation</span>
+                <span class="tech-pill">Automation</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> View GitHub
+              </a>
+              <button type="button" class="btn btn-ghost btn-sm details-trigger" data-project="smart-dustbin">
+                <i class="fa-solid fa-circle-info"></i> Project Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+        <div id="modal-body">
+          <!-- Dynamically inserted via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS / ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Recognition &amp; Milestones</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-container">
+          <div class="achievement-featured-card">
+            <div class="award-icon-wrapper">
+              <i class="fa-solid fa-trophy award-trophy"></i>
+              <div class="award-glow"></div>
+            </div>
+
+            <div class="award-details">
+              <div class="award-tag-badge">
+                <i class="fa-solid fa-star"></i> Featured Honor
+              </div>
+              <h3 class="award-title">Best Project in Robotics Lab</h3>
+              <h4 class="award-issuer">
+                <i class="fa-solid fa-building-columns"></i> JECRC University — Robotics &amp; Automation Lab
+              </h4>
+              <p class="award-description">
+                Awarded for exceptional design, functional engineering, and presentation of hands-on automated robotics projects during laboratory evaluations. Recognized among peers for demonstrating practical mastery of sensor integration, circuit prototyping, and code execution.
+              </p>
+
+              <div class="award-meta-grid">
+                <div class="award-meta-item">
+                  <span class="meta-label">Domain</span>
+                  <span class="meta-val">Robotics &amp; Smart Automation</span>
+                </div>
+                <div class="award-meta-item">
+                  <span class="meta-label">Category</span>
+                  <span class="meta-val">Academic &amp; Practical Excellence</span>
+                </div>
+                <div class="award-meta-item">
+                  <span class="meta-label">Institution</span>
+                  <span class="meta-val">JECRC University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Goals & In-Progress Milestones -->
+          <div class="future-milestones-card">
+            <div class="milestones-header">
+              <i class="fa-solid fa-compass-drafting icon-target"></i>
+              <div>
+                <h3>Academic &amp; Professional Growth</h3>
+                <p>Continuous learning in my B.Tech CSE (AI &amp; ML) trajectory</p>
+              </div>
+            </div>
+
+            <div class="milestone-steps">
+              <div class="step-item completed">
+                <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+                <div class="step-content">
+                  <h4>Robotics Lab Innovation Award</h4>
+                  <p>Successfully clinched the Best Project award in the university robotics lab.</p>
+                </div>
+              </div>
+
+              <div class="step-item current">
+                <div class="step-circle"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                <div class="step-content">
+                  <h4>AI &amp; Data Science Deep Dive</h4>
+                  <p>Advancing from C &amp; Python fundamentals into statistical learning, NumPy, Pandas, and SQL querying.</p>
+                </div>
+              </div>
+
+              <div class="step-item upcoming">
+                <div class="step-circle"><i class="fa-regular fa-clock"></i></div>
+                <div class="step-content">
+                  <h4>Machine Learning Systems &amp; Internships</h4>
+                  <p>Targeting practical machine learning certifications and collaborative software engineering internships.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Whether you have an internship opportunity, an interesting project to collaborate on, or just want to discuss AI and technology, feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <div class="contact-icon email-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <span class="card-caption">Email Me</span>
+                <a href="mailto:khushijn06118@gmail.com" class="card-link" id="email-link">khushijn06118@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="khushijn06118@gmail.com" title="Copy email address" aria-label="Copy email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <span class="card-caption">Call / WhatsApp</span>
+                <a href="tel:+917737084879" class="card-link">+91 7737084879</a>
+              </div>
+              <button class="copy-btn" data-copy="+917737084879" title="Copy phone number" aria-label="Copy phone number">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon university-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="contact-text">
+                <span class="card-caption">Campus</span>
+                <span class="card-plain">JECRC University, Jaipur, Rajasthan</span>
+              </div>
+            </div>
+
+            <div class="contact-socials-box">
+              <h4>Connect on Social Platforms</h4>
+              <div class="social-button-row">
+                <a href="https://www.linkedin.com/in/khushi-jain-6131423a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" class="social-btn github-btn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-container">
+              <h3>Send Me A Direct Message</h3>
+              <p class="form-note">Fill out the form below to initiate an email draft or connect directly.</p>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" placeholder="e.g. rahul@example.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-bookmark input-icon"></i>
+                    <input type="text" id="subject" name="subject" placeholder="e.g. Collaboration / Opportunity" required>
+                  </div>
+                  <span class="error-msg" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span class="required">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-message input-icon"></i>
+                    <textarea id="message" name="message" rows="5" placeholder="Hi Khushi, I would love to connect regarding..." required></textarea>
+                  </div>
+                  <span class="error-msg" id="message-error"></span>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span><span class="logo-name">Khushi</span><span class="logo-accent">.dev</span><span class="logo-bracket"> /&gt;</span>
+          </a>
+          <p>B.Tech CSE (AI &amp; ML) Student at JECRC University. Passionate about software development, robotics, and intelligent systems.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-group">
+          <h4>Direct Connect</h4>
+          <p><i class="fa-solid fa-envelope"></i> khushijn06118@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 7737084879</p>
+          <p><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan</p>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2025</span> Khushi Jain. Built with HTML5, CSS3 &amp; JavaScript.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/khushi-jain-6131423a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/khushi6118" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:khushijn06118@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
